@@ -1,0 +1,33 @@
+.App {
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px ;
+    text-align: center;
+
+}
+
+
+.todoForm {
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+}
+
+.renderMessage {
+    border: 1px solid gray;
+}
+
+.addMessages {
+    margin-top: 20px;
+    text-align: start;
+}
