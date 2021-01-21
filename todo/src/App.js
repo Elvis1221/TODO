@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ToDoForm} from "./todo-components/ToDoForm";
+import {ToDoList} from "./todo-components/ToDoList";
 
 import './App.css';
 import {AddMessage} from "./todo-components/AddMessage";
@@ -14,7 +14,7 @@ const App = () => {
         <div className={'title'}>
           <h3>Мои заметки :</h3>
         </div>
-        <ToDoForm />
+        <ToDoList />
       </div>
     </div>
   );

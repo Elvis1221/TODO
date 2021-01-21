@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
-import './todoForm.css';
+import './todoList.css';
 import {AddMessage} from "./AddMessage";
 
 
-export const ToDoForm = () => {
+export const ToDoList = () => {
 
   const [message, setMessage] = useState([]);
   const [writeMessage, setWriteMessage] = useState('');
