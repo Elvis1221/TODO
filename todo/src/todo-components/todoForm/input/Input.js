@@ -3,7 +3,6 @@ import React from "react";
 import './input.css';
 
 export const Input = ({writeText}) => {
-
   return (
     <div>
       <input className={'input'}
