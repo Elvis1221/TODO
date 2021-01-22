@@ -11,9 +11,6 @@ export const ToDoList = () => {
   const [message, setMessage] = useState([]);
   const [writeMessage, setWriteMessage] = useState('');
 
-  const writeText = (e) => setWriteMessage(e.target.value);
-
-
   const addMessage = ((writeMessage) => {
     setMessage(() => {
       return [
@@ -26,7 +23,9 @@ export const ToDoList = () => {
   });
   return (
     <div className={'todoList'}>
-      <TodoForm writeMessage={writeMessage} addMessage={addMessage} writeText={writeText}/>
+      <TodoForm writeMessage={writeMessage}
+                addMessage={addMessage}
+                setWriteMessage={setWriteMessage}/>
       <ListMessage message={message}/>
     </div>
   )

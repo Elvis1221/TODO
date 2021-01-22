@@ -5,19 +5,17 @@ import {Button} from "./button/Button";
 import './todoForm.css';
 
 
-export const TodoForm = ({writeText,addMessage,writeMessage})=> {
+export const TodoForm = ({setWriteMessage, addMessage, writeMessage}) => {
 
-  return(
-
+  return (
     <div className={'todoForm'}>
       <div>
         <h3>Мои заметки :</h3>
       </div>
       <div className={'activeElements'}>
-        <Input writeText={writeText}/>
+        <Input writeText={setWriteMessage}/>
         <Button addMessage={addMessage} writeMessage={writeMessage}/>
       </div>
-
     </div>
   )
-}
+};

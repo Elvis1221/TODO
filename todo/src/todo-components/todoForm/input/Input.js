@@ -2,14 +2,14 @@ import React from "react";
 
 import './input.css';
 
-export const Input = ({writeText}) => {
+export const Input = ({setWriteMessage}) => {
 
   return (
-    <div >
+    <div>
       <input className={'input'}
              type="text"
              placeholder='Введите заметку'
-             onChange={writeText}/>
+             onChange={(e) => setWriteMessage(e.target.value)}/>
     </div>
   )
 };
