@@ -1,5 +1,5 @@
 import React from 'react'
-import {AddMessage} from "../addMessage/AddMessage";
+import {AddMessage} from "../AddMessage/AddMessage";
 
 
 import './listMessage.css';
@@ -7,7 +7,7 @@ import './listMessage.css';
 
 export const ListMessage = ({message}) => {
   return (
-    <div className={'listMessages'}>
+    <div className={'ListMessages'}>
       {
         message.map((item) => <AddMessage message={item.message}/>)
       }

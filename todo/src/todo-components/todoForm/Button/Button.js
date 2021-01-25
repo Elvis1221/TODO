@@ -4,7 +4,7 @@ import './button.css';
 
 
 export const Button = ({addMessage})=>
-    <div className='button'>
+    <div className='add-button'>
       <button onClick={() => addMessage()} className='button'>
         Добавить
       </button>

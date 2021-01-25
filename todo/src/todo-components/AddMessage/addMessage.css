@@ -1,4 +1,6 @@
 .addMessages {
+    width: 500px;
+    margin: 0 auto;
     border-top: 1px solid gray;
     padding: 10px;
     text-align: justify;
@@ -6,5 +8,4 @@
 
 .addMessages li {
     list-style: none;
-
 }

@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 
-import {ListMessage} from "./listMessages/ListMessages";
+import {ListMessage} from "./ListMessages/ListMessages";
 import {TodoForm} from "./todoForm/TodoForm";
 
-import './todoList.css';
+import './todo.css';
 
 
-export const ToDoList = () => {
+export const Todo = () => {
   const [message, setMessage] = useState([]);
   const [writeMessage, setWriteMessage] = useState('');
 
@@ -23,7 +23,7 @@ export const ToDoList = () => {
     })
   };
   return (
-    <div className='todoList'>
+    <div className='todo-list'>
       <TodoForm  addMessage={addMessage} writeText={writeText}/>
       <ListMessage message={message}/>
     </div>
