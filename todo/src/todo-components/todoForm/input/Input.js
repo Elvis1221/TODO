@@ -2,13 +2,11 @@ import React from "react";
 
 import './input.css';
 
-export const Input = ({writeText}) => {
-  return (
+
+export const Input = ({writeText}) =>
     <div>
-      <input className={'input'}
+      <input className='input'
              type="text"
              placeholder='Введите заметку'
              onChange={writeText}/>
-    </div>
-  )
-};
+    </div>;

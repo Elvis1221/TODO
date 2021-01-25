@@ -7,13 +7,12 @@ import './todoList.css';
 
 
 export const ToDoList = () => {
-
   const [message, setMessage] = useState([]);
   const [writeMessage, setWriteMessage] = useState('');
 
-  const writeText = (e) => setWriteMessage(e.target.value);
+  const writeText = e => setWriteMessage(e.target.value);
 
-  const addMessage = ((writeMessage) => {
+  const addMessage = () => {
     setMessage(() => {
       return [
         ...message,
@@ -22,10 +21,10 @@ export const ToDoList = () => {
         }
       ]
     })
-  });
+  };
   return (
-    <div className={'todoList'}>
-      <TodoForm writeMessage={writeMessage} addMessage={addMessage} writeText={writeText}/>
+    <div className='todoList'>
+      <TodoForm  addMessage={addMessage} writeText={writeText}/>
       <ListMessage message={message}/>
     </div>
   )
